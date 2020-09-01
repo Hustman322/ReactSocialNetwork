@@ -1,0 +1,20 @@
+.header_menu {
+    grid-area: h;
+    background-color: #585755;
+    display: flex;
+    font-family: Intro;
+    width: 100%;
+    position: fixed;
+    height:50px;
+}
+
+
+.header_menu img {
+    margin-top: 4px;
+    margin-left: 80px;
+}
+
+.header_menu p {
+    font-size: 18px;
+    color: white;
+}

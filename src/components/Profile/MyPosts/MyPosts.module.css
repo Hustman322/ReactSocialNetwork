@@ -1,0 +1,46 @@
+
+.Myposts{
+    font-size:20px;
+    color:green;
+}
+
+.Newpost{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    flex-wrap:wrap;
+
+}
+
+.Newpost textarea{
+    border:none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color:lightskyblue;
+    width:100%;
+    resize: none;
+}
+
+.Newpost button{
+    margin-top:5px;
+    margin-bottom:5px;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+
+}
+
+.post{
+    display:flex;
+    width:95%;
+    border:solid 1px;
+    font-size:15px;
+    height:40px;
+
+}

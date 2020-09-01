@@ -1,0 +1,20 @@
+.PhotoDesc {
+    display: flex;
+}
+
+.Description {
+    margin-left: 15px;
+    width: 450px;
+}
+
+.Description p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.PhotoDesc img {
+    border: solid 1px;
+    width: 120px;
+    height: 120px;
+}

@@ -1,0 +1,56 @@
+.dialogspage{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "D D M M" "D D M M";
+}
+
+.dialogs{
+    text-align:center;
+    grid-area: D;
+}
+
+.dialogs .active{
+    color:forestgreen;
+}
+
+.dialog{
+    margin:10px;
+}
+
+
+
+.messages{
+    text-align:center;
+ grid-area: M;
+    border-left:1px solid;
+}
+
+
+.message{
+    margin:10px;
+}
+
+.sending{
+    display:flex;
+    margin-top:35px;
+   justify-content:center;
+}
+
+.sending textarea{
+    resize: none;
+    background-color:navajowhite;
+}
+
+.sending button{
+    border:none;
+    text-align:center;
+    display:inline-block;
+    box-sizing: border-box;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-weight:400;
+    background-color:lightseagreen;
+    position:relative;
+}

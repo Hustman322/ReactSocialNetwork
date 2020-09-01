@@ -1,0 +1,25 @@
+@font-face {
+    font-family: Organic;
+    src: url(fonts/OrganicTeabags.ttf);
+}
+
+@font-face {
+    font-family: Intro;
+    src: url(fonts/Intro.otf);
+}
+
+
+.app-wrapper {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1.8fr 0.7fr;
+    grid-template-rows: 50px 1.8fr 1fr;
+    grid-template-areas: "h h h h" ". m c .";
+}
+
+.app-wrapper-content {
+    font-family: Intro;
+    grid-area: c;
+    background-color: white;
+    border:1px solid;
+
+}

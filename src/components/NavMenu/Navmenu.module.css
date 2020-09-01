@@ -1,0 +1,36 @@
+.menu {
+    grid-area: m;
+    display: flex;
+}
+
+
+
+.menu .active {
+    color: yellow;
+}
+
+.menu img {
+    padding-right: 5px;
+}
+
+
+.sidebarmenu {
+    padding-left: 45px;
+    font-size: 25px;
+}
+
+.sidebarmenu li {
+    font-family: Intro;
+    color: black;
+    padding-bottom: 5px;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.sidebarmenu a{
+    text-decoration: none;
+}
+
+.active li{
+    color:forestgreen;
+}
