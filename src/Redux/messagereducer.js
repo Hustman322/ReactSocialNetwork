@@ -1,7 +1,24 @@
 const mes_text = 'UpdateMessageText'
 const mes_send = 'SendMessage'
 
-const messager_reducer= (state,action) => {
+let initialstate = {
+    DialogData: [
+        {name:'Dima',surname:'Mandryk',id:1},
+        {name:'Victor',surname:'Hui',id:2},
+        {name:'Oleh',surname:'Poleh',id:3}
+    ],
+
+    MessageData: [
+        {message:'Hello you fucking bitch', id:1},
+        {message:'No you bitch', id:2},
+        {message:'Nah', id:3}
+    ],
+
+    messagetext :  ""
+
+}
+
+const messager_reducer= (state = initialstate,action) => {
 
 
     switch (action.type) {

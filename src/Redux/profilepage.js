@@ -1,6 +1,13 @@
 const post_mes = 'PostMessage'
 
- const profilepage_reducer = (state,action) => {
+let initialstate ={
+    PostData: [
+        {id: 1, message: 'Mandrik sosav sodnia', likes : 42},
+        {id: 2, message: 'Dota 2 zaebis',likes : 5}
+    ],
+}
+
+ const profilepage_reducer = (state = initialstate ,action) => {
 
      switch (action.type) {
          case post_mes:
