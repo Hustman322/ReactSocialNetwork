@@ -13,7 +13,7 @@ import store from "./Redux/redux-store";
     ReactDOM.render(
         <React.StrictMode>
             <BrowserRouter>
-            <App state={store.getState()} Dispatch={store.dispatch.bind(store)}/>
+            <App store={store} Dispatch={store.dispatch.bind(store)}/>
             </BrowserRouter>
         </React.StrictMode>,
         document.getElementById('root')

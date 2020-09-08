@@ -10,22 +10,12 @@ function Dialogs(props) {
 
 
 
-    let DialogElements = props.Messager.DialogData.map(el => <DialogItem name={el.name} surname={el.surname} id={el.id}/>);
+    let DialogElements = props.DialogElements.map(el => <DialogItem name={el.name} surname={el.surname} id={el.id}/>);
 
-    let MessageElements = props.Messager.MessageData.map(el => <MessageItem message={el.message} id={el.id}/>);
+    let MessageElements = props.MessageElements.map(el => <MessageItem message={el.message} id={el.id}/>);
 
-    let newMessagebody = props.Messager.messagetext;
 
-    let refreshmessage= (e) => {
-    let text = e.target.value;
-    props.Dispatch(refreshmestext(text));
-    }
 
-    let send = () => {
-
-        props.Dispatch(sendmessage())
-
-    }
 
     return (
         <div className={s.dialogspage}>
@@ -35,8 +25,8 @@ function Dialogs(props) {
             <div className={s.messages}>
                 {MessageElements}
                 <div className={s.sending}>
-                <textarea value={newMessagebody} onChange={refreshmessage} placeholder='Add Text Here'></textarea>
-                    <button onClick={send}>-></button>
+                <textarea value={props.newMessagebody} onChange={props.refreshmessage} placeholder='Add Text Here'></textarea>
+                    <button onClick={props.send}>-></button>
                 </div>
             </div>
         </div>

@@ -4,8 +4,8 @@ import './App.css';
 import Header from "./components/Header/Header";
 import Navmenu from "./components/NavMenu/Navmenu";
 import Profile from "./components/Profile/Profile";
-import Dialogs from "./components/Dialogs/Dialogs";
 import {Route} from "react-router-dom";
+import DialogsContainer from "./components/Dialogs/DialogsContainer";
 
 
 
@@ -18,8 +18,8 @@ function App(props) {
             <Navmenu/>
 
             <div className="app-wrapper-content">
-                <Route path="/Profile" render={() => <Profile ProfilePage={props.state.ProfilePage} Dispatch={props.Dispatch}/>} />
-                <Route path="/Dialogs" render={() => <Dialogs Messager={props.state.Messager} Dispatch={props.Dispatch}/>}/>
+                <Route path="/Profile" render={() => <Profile store={props.store}/>} />
+                <Route path="/Dialogs" render={() => <DialogsContainer store={props.store}/>}/>
             </div>
         </div>
 
