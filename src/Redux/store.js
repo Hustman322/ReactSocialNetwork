@@ -1,4 +1,4 @@
-import profilepage_reducer from "./profilepage.js";
+import profilepage_reducer from "./profilepagereducer.js";
 import messager_reducer from "./messagereducer.js";
 
 
